@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objekt</title>
+  </head>
+  <body>
+    <h1>Biler</h1>
+    <article id="bilkort">
+      <img
+        src="imgs/great-cocktails-ax7aFzvC-xk-unsplash.jpg"
+        alt="modelbillede"
+      />
+      <h2>Brand</h2>
+      <p>Model</p>
+      <div>Passagerer</div>
+    </article>
+    <ul></ul>
+    <script>
+      const bil = {
+        brand: "BMW",
+        model: "M3",
+        drivmiddel: "Diesel",
+        lak: "Blank sort",
+        passagere: ["Peter", " Alan", " mor"],
+      };
+
+      const artikel = document.querySelector("article");
+      console.log(artikel);
+
+      artikel.querySelector("img").src = bil.billede;
+      artikel.querySelector("h2").textContent = bil.brand;
+      artikel.querySelector("p").textContent = bil.model;
+      artikel.querySelector("div").textContent = bil.passagere;
+
+      function putListe(element) {
+        console.log(element);
+      }
+
+      //Skriv bil i konsol for at få frem listen med info
+    </script>
+  </body>
+</html>
