@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Playliste</title>
+  </head>
+  <body>
+    <h1>Playliste</h1>
+    <ul id="playliste"></ul>
+    <script>
+      const liste = document.querySelector("ul");
+
+      const titel = [
+        "Titel 1",
+        "Titel 2",
+        "Titel 3",
+        "Titel 4",
+        "Titel 5",
+        "Titel 6",
+        "Titel 7",
+        "Titel 8",
+        "Titel 9",
+        "Titel 10",
+      ];
+
+      titel.forEach(putListe);
+
+      function putListe(element) {
+        console.log(element);
+        liste.innerHTML += "<li>" + element + "</li>";
+      }
+    </script>
+  </body>
+</html>
